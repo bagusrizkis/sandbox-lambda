@@ -9,6 +9,8 @@
 npm i netlify-cli -g
 ```
 
+then login: `ntl login`
+
 - Install project depedency
 ```bash
 npm i
@@ -17,9 +19,16 @@ npm install
 ```
 
 - add `.env` to root app directory
+```env
+MT_ID_MERCHANT=
+MT_CLIENT_KEY=
+MT_SERVER_KEY=
+```
 
+# Run App
 
-- run app
 ```bash
 ntl dev
+# or
+netlify dev
 ```
