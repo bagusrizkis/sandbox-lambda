@@ -3,7 +3,7 @@ const jsonBodyParser = require("@middy/http-json-body-parser");
 const httpErrorHandler = require("@middy/http-error-handler");
 const createError = require("http-errors");
 
-const count = 0;
+let count = 0;
 
 const baseHandler = async function (event, context, cb) {
     console.log(event.body, " |||| ", count);
